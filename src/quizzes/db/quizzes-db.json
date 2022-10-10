@@ -1,0 +1,32 @@
+[
+    {
+        "id" : 1,
+        "title" : "WHat is graphql",
+        "description": "Questions that go over some Graphql details",
+        "shuffleQuestions": true,
+        "shuffleAnswers" : true,
+        "questions":[
+            {
+                "text":"What is graphql?",
+                "isMarkDown": true
+            },
+            {
+                "text": "Why use an input type?"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "WHat is Docker",
+        "description": "Questions that go over some DOckcer details",
+        "shuffleQuestions": false,
+        "shuffleAnswers": true
+    },
+    {
+        "id": 3,
+        "title": "WHat is Tensorflow",
+        "description": "Questions that go over some tensorflow details",
+        "shuffleQuestions": true,
+        "shuffleAnswers": false
+    }
+]

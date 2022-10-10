@@ -1,0 +1,32 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Question {
+  text: String!
+  isMarkDown: Boolean
+}
+
+type Quiz {
+  id: Float!
+  title: String!
+  description: String!
+  shuffleQuestions: Boolean!
+  shuffleAnswers: Boolean!
+  questions: [Question!]
+}
+
+type Query {
+  quizzes: [Quiz!]!
+}
+
+type Mutation {
+  toggleShuffleAnswers(quizId: Int!): Quiz!
+  addQuestion(questionInput: QuestionInput!): Question!
+}
+
+input QuestionInput {
+  quizId: Float!
+  text: String!
+  isMarkDown: Boolean
+}
